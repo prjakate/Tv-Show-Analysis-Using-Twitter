@@ -1,0 +1,3 @@
+LOAD DATA INFILE '/path/tvshow.csv' INTO TABLE tvshow FIELDS TERMINATED BY ',';
+LOAD DATA INFILE '/path/tvcharacter.csv' INTO TABLE tvcharacter FIELDS TERMINATED BY ',';
+LOAD DATA INFILE '/path/latest_time.csv' INTO TABLE latest_time FIELDS TERMINATED BY ',';

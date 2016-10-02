@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			#anandi-check {
+				    display:none;
+				}
+			.img-checked
+			{
+				border: 11px solid grey;
+			}
+			.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+		</style>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			function checkBox(id)
+			{
+				var a=document.getElementById(id+'-check');
+				if(a.checked==true) a.checked=false;
+				else a.checked=true;
+				if(a.checked==false)
+				// $('#'+id+'-image').css("border","solid 2px");
+				$('#'+id+'-image').removeClass("shadow");
+				else
+					$('#'+id+'-image').addClass("shadow");
+				// $('#'+id+'-image').css("border","solid 10px");
+				console.log($("#anandi-image"));
+			}
+		</script>
+	</head>
+	<body>
+		<img src="./assets/images/anandi.png" onclick="checkBox('anandi');" id="anandi-image"/>
+	<input id="anandi-check" style = "display:none;" name="bv" type="checkbox"/>
+	</body>
+</html>
